@@ -49,37 +49,6 @@
       border-radius: 8px;
       cursor: pointer;
     }
-
-    .heart {
-      width: 120px;
-      height: 108px;
-      position: relative;
-      animation: beat 1s infinite;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 120px;
-      height: 108px;
-      background: #ff1e56;
-      border-radius: 60px 60px 0 0;
-    }
-
-    .heart::before {
-      left: 60px;
-      transform: rotate(-45deg);
-      transform-origin: 0 100%;
-    }
-
-    .heart::after {
-      left: 0;
-      transform: rotate(45deg);
-      transform-origin: 100% 100%;
-    }
-
     @keyframes beat {
       0%, 100% { transform: scale(1); }
       50% { transform: scale(1.1); }
